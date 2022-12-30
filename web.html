@@ -29,7 +29,146 @@
 
 <body>
 
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Buka tiap hari</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Jl. jalanan no 0</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+                <p>Karen's Café dibuat dan awalnya dinamai Karen Roe, yang dibuka tak lama setelah kelahiran putranya
+                    Lucas Scott,
+                    banyak orang di Tree Hill percaya bahwa Kafe tersebut akan gagal. Namun, kafe itu pun sukses dan
+                    menjadi salah satu spot turis.</p>
+                <p>Selain menu espresso kami yang lengkap, kami menyajikan sandwich sarapan dan makan siang segar yang
+                    dibuat sesuai pesanan,
+                    serta pilihan makanan pendamping dan salad, serta makanan enak lainnya..</p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU KAMI</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Makanan</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Minuman</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Roti Kering</h5>
+                    <p class="w3-text-grey">Roti tawar yang digoreng agak kegosongan</p><br>
+
+                    <h5>Kentang Alami</h5>
+                    <p class="w3-text-grey">Kentang yang disajikan secara mentah</p>
+                    <br>
+
+                    <h5>Telur Mata Sapi</h5>
+                    <p class="w3-text-grey">Telur yang digoreng dengan minyak diatas wajan</p><br>
+
+                    <h5>Ayam Hitam</h5>
+                    <p class="w3-text-grey">Ayam yang digoreng agak kering dan gosong</p>
+                    <br>
+
+                    <h5>CheeseCake</h5>
+                    <p class="w3-text-grey">Kue rasa keju yang ditaburi irisan keju</p>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Air Mineral</h5>
+                    <p class="w3-text-grey">Air biasa</p><br>
+
+                    <h5>Lemon tea</h5>
+                    <p class="w3-text-grey">Lemon tea saset yang disajikan didalam gelas</p><br>
+
+                    <h5>Teh Manis</h5>
+                    <p class="w3-text-grey">Teh dengan gula disediakan</p><br>
+
+                    <h5>Teh Tawar</h5>
+                    <p class="w3-text-grey">Teh tanpa gula disediakan</p><br>
+
+                    <h5>Soda</h5>
+                    <p class="w3-text-grey">Coca-cola, Sprite, Fanta</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+                <p>Anda dapat menemukan kami disini.</p>
+                <img src="location.jpg" class="w3-image" style="width:100%">
+                <p>Pesan meja anda:</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Berapa orang" required
+                            name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                            required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Permintaan tambahan"
+                            required name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">KIRIM</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
 
 </body>
 
